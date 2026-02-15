@@ -1,0 +1,75 @@
+{
+  "info": {
+    "name": "Registration Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Successful Registration",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"test@example.com\",\"password\":\"Pass123!\",\"confirm_password\":\"Pass123!\"}"
+        },
+        "url": {
+          "raw": "https://api.example.com/register",
+          "protocol": "https",
+          "host": [
+            "api",
+            "example",
+            "com"
+          ],
+          "path": [
+            "register"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Successful Registration",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"email\":\"test@example.com\",\"password\":\"Pass123!\",\"confirm_password\":\"Pass123!\"}"
+            },
+            "url": {
+              "raw": "https://api.example.com/register",
+              "protocol": "https",
+              "host": [
+                "api",
+                "example",
+                "com"
+              ],
+              "path": [
+                "register"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "body": "{\"message\":\"Registration successful\",\"user_id\":123}",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
